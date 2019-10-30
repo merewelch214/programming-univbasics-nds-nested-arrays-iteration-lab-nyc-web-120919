@@ -8,15 +8,14 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
   
   row_index = 0 
-  outter_array = []
+  new_array = []
   while row_index < src.count do  
-    column_index = 0 
-    inner_array = []
-      item = src[row_index][column_index]
-      inner_array << "I love #{item} and "
-
+    item = src[row_index][0]
+    item2 = src[row_index][1]
+    new_array << "I love #{item} and #{item2} on my pizza"
+    row_index += 1
   end
-  array_index += 1
+  return new_array
 end
 
 def find_greater_pair(src)
