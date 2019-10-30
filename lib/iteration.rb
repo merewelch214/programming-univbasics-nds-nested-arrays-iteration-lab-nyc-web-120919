@@ -8,6 +8,7 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
   
   row_index = 0 
+  outter_array = []
   while row_index < src.count do  
     column_index = 0 
     while column_index < src[row_index][column_index].count do 
