@@ -11,9 +11,10 @@ def join_ingredients(src)
   outter_array = []
   while row_index < src.count do  
     column_index = 0 
-    while column_index < src[row_index][column_index].count do 
-      
-    end
+    inner_array = []
+      item = src[row_index][column_index]
+      inner_array << "I love #{item} and "
+
   end
   array_index += 1
 end
